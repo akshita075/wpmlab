@@ -1,8 +1,41 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+@import url("//fonts.googleapis.com/css?family=Lobster|Cabin:400,700");
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lobster', cursive;
+}
+
+legend {
+  font-family: 'Lobster', cursive;
+}
+
+h4 a, h4 a:hover {
+  color: #fff;
+}
+
+h4 small {
+  font-size: 60%;
+  line-height: 200%;
+  color: #aaa;
+}
+
+h1 small {
+  color: #aaa;
+}
+
+p {
+  margin-bottom: 0.65rem;
 }
 
 a {
-  color: #00B7FF;
+  color: rgba(255, 255, 255, 0.8)
+}
+
+a:hover {
+  color:#fff
+}
+
+body {
+  font-family: "Cabin", Arial, sans-serif;
+  color: #fff;
+  background-color:#108a93;
 }
