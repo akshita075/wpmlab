@@ -3,11 +3,12 @@ const router = express.Router();
 const ctrlLocations = require('../controllers/locations');
 const ctrlOthers = require('../controllers/others');
 
-/*Locations page*/
-router.get('/',ctrlLocations.homelist);
+/* Locations pages */
+router.get('/', ctrlLocations.homelist);
 router.get('/location', ctrlLocations.locationInfo);
-router.get('/location/review/new',ctrlLocations.addReview);
-/*others*/
-router.get('/about',ctrlOthers.about);
+/* Review pages */
+router.get('/location/review/new',ctrlLocations.addReview)
+/* Other pages */
+router.get('/about', ctrlOthers.about);
 
 module.exports = router;
